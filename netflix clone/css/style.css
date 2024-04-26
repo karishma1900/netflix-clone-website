@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: black;
+    color:white;
+}
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:auto;
+    max-width: 1500px;
+    padding:20px 0px;
+}
+.header-logo img{
+    width:150px;
+
+}
+.header{
+    background:linear-gradient(to top,rgba(0,0,0,0.9)0, rgba(0,0,0,0.6)40%,rgba(0,0,0,0.3)60%,rgba(0,0,0,0.9)100%),
+     url(/images/IN-en-20240102-trifectadaily-perspective_alpha_website_small.jpg)no-repeat center center/cover;
+    height:80%;
+    border-bottom: 10px solid rgb(59,59,59);
+}
+.header::after{
+    content:"";
+    width:1000px;
+    height:100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);;
+   
+}
+
+/* header{
+   
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);;
+} */
+.header-bottom{
+    position: absolute;
+    top:30%;
+    left:20%;
+    text-align:center;
+}
+.header-bottom h2{
+    font-size: 65px;
+    color:white;
+    padding:10px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header-bottom h3{
+    font-size: 25px;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:10px 0px;
+}
+form input[type = text]{
+    padding:20px 20px;
+    width:30%;
+    padding-left:5px;
+    background-color:rgba(10, 10, 10, 0.63);
+    border:1px solid rgb(59,59,59);
+   border-radius: 5px;
+    color:white;
+}
+
+
+.header-select button{
+    background-color:rgb(229, 9, 20);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.header-select select{
+    padding: 10px 5px;
+    width:150px;
+    background-color: transparent;
+    color:white;
+    font-size: 16px;
+}
+.header-select option{
+    color:black;
+}
+form button{
+    background-color:rgb(229, 9, 20);
+    padding: 20px 50px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+   border-radius: 5px;
+    cursor: pointer;
+}
+
+/* flex columns */
+.column1{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  max-width: 1500px;
+  margin:auto;
+  padding:70px 30px;
+    color:white;
+ 
+}
+.column-text {
+    width:50%;
+    padding:0px 30px;
+}
+.column-text h2{
+    font-size: 60px;
+}
+.column-text h5{
+    font-size: 25px;
+    font-weight: 400;
+}
+.column-img{
+    width:40%;
+}
+.column-img img{
+    width:100%;
+    z-index: 1;
+
+}
+.column-img video{
+    position: absolute;
+    right:16%;
+    top:93%;
+    width:400px;
+    height:400px;
+    z-index: -1;
+}
+.flex-columns{
+    border-bottom: 10px solid rgb(59,59,59);
+    padding: 0px 90px;
+    margin-top: 40px;
+    
+}
+.image video{
+position: absolute;
+top:220%;
+right:15%;
+width:400px;
+z-index: -1;
+height:400px;
+}
+.image img{
+    z-index: 1;
+}
+.image{
+    width:40%;
+
+}
+
+
+/* tabs */
+.accordian{
+    max-width: 1500px;
+    margin:auto;
+}
+.tab{
+    margin-bottom: 10px;
+    background-color: rgb(59,59,59);
+}
+.question-2{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 0px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(92,92,92);
+    }
+}
+.toggle-btn{
+    background-color: transparent;
+    color:white;
+    font-weight: 300;
+    border: none;
+    padding:8px 12px;
+    font-size: 65px;
+    cursor: pointer;
+    outline: none;
+}
+.close-btn{
+    color:white;
+    border: none;
+    padding:8px 121px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+.answer{
+    display: none;
+    padding:10px;
+    border-top: 1px solid black;;
+}
+.answer.show{
+    display: block;
+
+}
+.faq-heading h1{
+font-size: 48px;
+font-weight: 800;
+padding:80px 0px;
+padding-bottom: 50px;
+color:white;
+text-align: center;
+
+}
+.question-2 h2{
+
+    font-size: 25px;
+    color:white;
+    font-weight: 400;
+    padding:10px 20px;
+}
+.answer p{
+    font-size: 25px;
+  
+    font-weight: 400;
+    padding:10px 20px;
+}
+
+
+/* newsletter */
+.newsletter-1{
+    max-width: 1500px;
+    margin:auto;
+    text-align: center;
+    padding: 80px 0px;
+   
+}
+.newsletter{
+    border-bottom: 10px solid rgb(59,59,59);
+}
+.newsletter-1 h6{
+    font-size: 25px;
+    padding:10px 0px;
+}
+/* footer */
+.footer1{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer{
+    padding: 80px 0px;
+    max-width: 1500px;
+    margin: auto;
+}
+.footer2 a{
+    font-size: 15px;
+    text-decoration: none;
+    color:rgb(211, 204, 204);
+    border-bottom: 1px solid rgb(211, 204, 204);
+    line-height: 30px;
+
+}
+
+@media screen and (max-width:500px){
+
+}
